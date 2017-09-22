@@ -1,0 +1,19 @@
+<center>
+  <h1>PS-P3</h1>
+  <textarea rows="20" cols="100" id="texto" class="textarea"> </textarea>
+  <br>
+  <input type="file" id="fileinput" onChange={{action "metodo_leerArchivo"}}/>
+  <br>
+  <br>
+  <input type="button" id="sumasInput" value="Calcular Sumatorias" onclick={{action "metodo_calcularSumasXY"}}>
+  <input type="button" id="cuadInput" value="Calcular Sumatorias de Cuadrados" hidden="true" onclick={{action "metodo_calcularSumasCuad"}}>
+  <input type="button" id="produInput" value="Calcular Productos" hidden="true" onclick={{action "metodo_calcularProductoXY"}}>
+  <input type="button" id="mediInput" value="Calcular Medias" hidden="true" onclick={{action "metodo_calcularMedias"}}>
+  <input type="button" id="beta1Input" value="Calcular Beta 1" hidden="true" onclick={{action "metodo_calcularBeta1"}}>
+  <input type="button" id="correInput" value="Calcular Correlacion" hidden="true" onclick={{action "metodo_calcularCorrelacion"}}>
+  <input type="button" id="beta0Input" value="Calcular Beta 0" hidden="true" onclick={{action "metodo_calcularBeta0"}}>
+  <input type="button" id="regreInput" value="Calcular Regresion" hidden="true" onclick={{action "metodo_calcularRegresion"}}>
+  <h1 id="resultado1"></h1>
+  <h1 id="resultado2"></h1>
+  <h1 id="resultado3"></h1>
+</center>
